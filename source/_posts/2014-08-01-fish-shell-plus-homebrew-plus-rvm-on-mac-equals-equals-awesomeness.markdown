@@ -3,7 +3,9 @@ layout: post
 title: "Fish Shell + HomeBrew + RVM + Iterm2 on Mac = Awesomeness"
 date: 2014-08-01 02:33:19 -0700
 comments: true
-categories: Tech Tips
+categories: [tech, tips, iterm, mac, fish, brew]
+keywords: tutorial, setup, mavericks, mac, fish, homebrew, brew, iterm, rvm
+description: A tutorial on how to setup fish, homebrew, iterm, and rvm on osx mavericks.
 ---
 
 Last week my friend James showed to me the autocompletion feature in fish shell
