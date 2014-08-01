@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tips | 软醉]]></title>
+  <link href="http://blog.softdrunk.me/blog/categories/tips/atom.xml" rel="self"/>
+  <link href="http://blog.softdrunk.me/"/>
+  <updated>2014-08-01T03:19:32-07:00</updated>
+  <id>http://blog.softdrunk.me/</id>
+  <author>
+    <name><![CDATA[Yue Tian (Alex)]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fish Shell + HomeBrew + RVM + Iterm2 on Mac = Awesomeness]]></title>
+    <link href="http://blog.softdrunk.me/blog/2014/08/01/fish-shell-plus-homebrew-plus-rvm-on-mac-equals-equals-awesomeness/"/>
+    <updated>2014-08-01T02:33:19-07:00</updated>
+    <id>http://blog.softdrunk.me/blog/2014/08/01/fish-shell-plus-homebrew-plus-rvm-on-mac-equals-equals-awesomeness</id>
+    <content type="html"><![CDATA[<p>Last week my friend James showed to me the autocompletion feature in fish shell
+and I was impressed. It is a feature that you may never thought about until one
+day you tried it and can&rsquo;t imagine life without it. In the last few days, I&rsquo;ve
+been trying to get homebrew and rvm working on fish shell. So I thought maybe
+this would turn into a good blog post to share my setup with others.</p>
+
+<p>This post is based on the wonderful article in German <a href="http://blog.detmud.me/2013/05/mac-homebrew-fishfish-rvm/">here</a>.</p>
+
+<p><b>1.</b> First, install command line development tools by running:
+<code>
+xcode-select --install
+</code></p>
+
+<p><b>2.</b> To install Homebrew, simply do:
+<code>
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+</code></p>
+
+<p>Make sure to run <code>brew update</code> and <code>brew doctor</code> before any of the
+following steps.</p>
+
+<p><b>3.</b> To install fish shell with homebrew, run:
+<code>
+brew install fish
+</code></p>
+
+<p>Do not set fish as default shell yet, we will do this at the end.</p>
+
+<p><b>4.</b> Next, we install rvm manually. (I found this way of installation to be the
+    cleanest one):
+<code>
+mkdir -p ~/.rvm/src &amp;&amp; cd ~/.rvm/src
+git clone --depth 1 git://github.com/wayneeseguin/rvm.git
+cd rvm &amp;&amp; ./install
+</code></p>
+
+<p><b>5.</b> Set up fish shell configuration files with oh-my-fish. To install, run:
+<code>
+curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
+</code></p>
+
+<p>The config file is located at <code>~/.config/fish/config.fish</code> You may find this
+<a href="https://gist.github.com/wilhelm-murdoch/6162503">config</a> useful. It configures
+the fish shell so that every time when you enter a git repository, the current
+branch will be shown. Also, it includes an <code>iterm</code> scheme that I personally
+like a lot.</p>
+
+<p><b>6.</b> Make sure to add the following lines into your <code>config.fish</code> file:
+<code>
+set fish_plugins brew rvm
+set -x PATH /usr/local/bin /usr/local/sbin $PATH
+rvm &gt; /dev/null
+</code></p>
+
+<p><b>7.</b> Finally, setup fish as your system and default shell:
+Add <code>/usr/local/bin/fish</code> to <code>/etc/shells</code>, and then type into your
+terminal emulator:
+<code>
+chsh -s /usr/local/bin/fish
+</code></p>
+
+<p>Enter your password if prompt and restart your terminal emulator. Voila! How
+beautiful this is.</p>
+]]></content>
+  </entry>
+  
+</feed>
