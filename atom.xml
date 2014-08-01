@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Softdrunk's Blog]]></title>
+  <title><![CDATA[软醉]]></title>
   <link href="http://blog.softdrunk.me/atom.xml" rel="self"/>
   <link href="http://blog.softdrunk.me/"/>
-  <updated>2014-07-31T15:48:03-07:00</updated>
+  <updated>2014-08-01T02:26:10-07:00</updated>
   <id>http://blog.softdrunk.me/</id>
   <author>
-    <name><![CDATA[Yue Tian(Alex)]]></name>
+    <name><![CDATA[Yue Tian (Alex)]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
