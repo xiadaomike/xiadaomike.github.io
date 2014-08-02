@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac | 软醉]]></title>
   <link href="http://blog.softdrunk.me/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://blog.softdrunk.me/"/>
-  <updated>2014-08-01T16:20:02-07:00</updated>
+  <updated>2014-08-02T01:45:08-07:00</updated>
   <id>http://blog.softdrunk.me/</id>
   <author>
     <name><![CDATA[Yue Tian (Alex)]]></name>
@@ -20,66 +20,87 @@
     <id>http://blog.softdrunk.me/blog/2014/08/01/fish-shell-plus-homebrew-plus-rvm-on-mac-equals-equals-awesomeness</id>
     <content type="html"><![CDATA[<p>Last week my friend James showed to me the autocompletion feature in fish shell
 and I was impressed. It is a feature that you may never thought about until one
-day you tried it and can&rsquo;t imagine life without it. In the last few days, I&rsquo;ve
+day you tried it and can’t imagine life without it. In the last few days, I’ve
 been trying to get homebrew and rvm working on fish shell. So I thought maybe
 this would turn into a good blog post to share my setup with others.</p>
 
 <p>This post is based on the wonderful article in German <a href="http://blog.detmud.me/2013/05/mac-homebrew-fishfish-rvm/">here</a>.</p>
 
-<p><b>1.</b> First, install command line development tools by running:
-<code>
-xcode-select --install
-</code></p>
+<p><b>1. First, install command line development tools by running:</b></p>
 
-<p><b>2.</b> To install Homebrew, simply do:
-<code>
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-</code></p>
+<div><div class="CodeRay">
+  <div class="code"><pre>xcode-select --install
+</pre></div>
+</div>
+</div>
 
-<p>Make sure to run <code>brew update</code> and <code>brew doctor</code> before any of the
+<p><br />2. To install Homebrew, simply do:</p>
+
+<div><div class="CodeRay">
+  <div class="code"><pre>ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;
+</pre></div>
+</div>
+</div>
+
+<p><br />
+Make sure to run <code>brew update</code> and <code>brew doctor</code> before any of the
 following steps.</p>
 
-<p><b>3.</b> To install fish shell with homebrew, run:
-<code>
-brew install fish
-</code></p>
+<p><b>3. To install fish shell with homebrew, run:</b></p>
 
-<p>Do not set fish as default shell yet, we will do this at the end.</p>
+<div><div class="CodeRay">
+  <div class="code"><pre>brew install fish
+</pre></div>
+</div>
+</div>
+<p><br />Do not set fish as default shell yet, we will do this at the end.</p>
 
-<p><b>4.</b> Next, we install rvm manually. (I found this way of installation to be the
-    cleanest one):
-<code>
-mkdir -p ~/.rvm/src &amp;&amp; cd ~/.rvm/src
+<p><b>4. Next, we install rvm manually. (I found this way of installation to be the
+    cleanest one):</b></p>
+
+<div><div class="CodeRay">
+  <div class="code"><pre>mkdir -p ~/.rvm/src &amp;&amp; cd ~/.rvm/src
 git clone --depth 1 git://github.com/wayneeseguin/rvm.git
 cd rvm &amp;&amp; ./install
-</code></p>
+</pre></div>
+</div>
+</div>
 
-<p><b>5.</b> Set up fish shell configuration files with oh-my-fish. To install, run:
-<code>
-curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
-</code></p>
+<p><br />5. Set up fish shell configuration files with oh-my-fish. To install, run:</p>
 
-<p>The config file is located at <code>~/.config/fish/config.fish</code> You may find this
+<div><div class="CodeRay">
+  <div class="code"><pre>curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
+</pre></div>
+</div>
+</div>
+
+<p><br />The config file is located at <code lang="bash">~/.config/fish/config.fish</code> You may find this
 <a href="https://gist.github.com/wilhelm-murdoch/6162503">config</a> useful. It configures
-the fish shell so that every time when you enter a git repository, the current
+the fish shell so that every time when you enter a git repository, the current 
 branch will be shown. Also, it includes an <code>iterm</code> scheme that I personally
 like a lot.</p>
 
-<p><b>6.</b> Make sure to add the following lines into your <code>config.fish</code> file:
-<code>
-set fish_plugins brew rvm
+<p><b>6. Make sure to add the following lines into your <code>config.fish</code> file:</b></p>
+
+<div><div class="CodeRay">
+  <div class="code"><pre>set fish_plugins brew rvm
 set -x PATH /usr/local/bin /usr/local/sbin $PATH
 rvm &gt; /dev/null
-</code></p>
+</pre></div>
+</div>
+</div>
 
-<p><b>7.</b> Finally, setup fish as your system and default shell:
+<p><br />7. Finally, setup fish as your system and default shell:
 Add <code>/usr/local/bin/fish</code> to <code>/etc/shells</code>, and then type into your
-terminal emulator:
-<code>
-chsh -s /usr/local/bin/fish
-</code></p>
+terminal emulator:</p>
 
-<p>Enter your password if prompt and restart your terminal emulator. Voila! How
+<div><div class="CodeRay">
+  <div class="code"><pre>chsh -s /usr/local/bin/fish
+</pre></div>
+</div>
+</div>
+
+<p><br />Enter your password if prompt and restart your terminal emulator. Voila! How
 beautiful this is.</p>
 ]]></content>
   </entry>
