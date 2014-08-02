@@ -5,8 +5,10 @@ date: 2014-08-01 02:33:19 -0700
 comments: true
 categories: [tech, tips, iterm, mac, fish, brew]
 keywords: tutorial, setup, mavericks, mac, fish, homebrew, brew, iterm, rvm
-description: A tutorial on how to setup fish, homebrew, iterm, and rvm on osx mavericks.
+description: A tutorial on how to setup fish shell with homebrew and rvm on osx mavericks.
 ---
+
+A tutorial on how to setup fish shell with homebrew and rvm on osx mavericks.
 
 Last week my friend James showed to me the autocompletion feature in fish shell
 and I was impressed. It is a feature that you may never thought about until one
@@ -22,7 +24,6 @@ This post is based on the wonderful article in German [here](http://blog.detmud.
 xcode-select --install
 ~~~
 
-^
 <br>2. To install Homebrew, simply do:
 
 ~~~ bash
