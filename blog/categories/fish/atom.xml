@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Fish | 软醉]]></title>
   <link href="http://blog.softdrunk.me/blog/categories/fish/atom.xml" rel="self"/>
   <link href="http://blog.softdrunk.me/"/>
-  <updated>2014-08-02T01:45:08-07:00</updated>
+  <updated>2014-08-02T13:48:02-07:00</updated>
   <id>http://blog.softdrunk.me/</id>
   <author>
     <name><![CDATA[Yue Tian (Alex)]]></name>
@@ -18,7 +18,9 @@
     <link href="http://blog.softdrunk.me/blog/2014/08/01/fish-shell-plus-homebrew-plus-rvm-on-mac-equals-equals-awesomeness/"/>
     <updated>2014-08-01T02:33:19-07:00</updated>
     <id>http://blog.softdrunk.me/blog/2014/08/01/fish-shell-plus-homebrew-plus-rvm-on-mac-equals-equals-awesomeness</id>
-    <content type="html"><![CDATA[<p>Last week my friend James showed to me the autocompletion feature in fish shell
+    <content type="html"><![CDATA[<p>A tutorial on how to setup fish shell with homebrew and rvm on osx mavericks.</p>
+
+<p>Last week my friend James showed to me the autocompletion feature in fish shell
 and I was impressed. It is a feature that you may never thought about until one
 day you tried it and can’t imagine life without it. In the last few days, I’ve
 been trying to get homebrew and rvm working on fish shell. So I thought maybe
