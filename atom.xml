@@ -4,7 +4,7 @@
   <title><![CDATA[软醉]]></title>
   <link href="http://blog.softdrunk.me/atom.xml" rel="self"/>
   <link href="http://blog.softdrunk.me/"/>
-  <updated>2014-08-02T13:48:02-07:00</updated>
+  <updated>2014-10-17T00:42:27-07:00</updated>
   <id>http://blog.softdrunk.me/</id>
   <author>
     <name><![CDATA[Yue Tian (Alex)]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[HHKB Pro2 Type S Configuration]]></title>
+    <link href="http://blog.softdrunk.me/blog/2014/10/17/hhkb-pro2-type-s-configuration/"/>
+    <updated>2014-10-17T00:18:15-07:00</updated>
+    <id>http://blog.softdrunk.me/blog/2014/10/17/hhkb-pro2-type-s-configuration</id>
+    <content type="html"><![CDATA[<p>So I got my HHKB Pro2 Type S keyboard yesterday. In the beginning things went
+pretty smoothly as I followed the set-up guidelines on
+<a href="https://elitekeyboards.com/products.php?sub=pfu_keyboards,hhkbpro2&amp;pid=pdkb400wns">elitekeyboards</a>.</p>
+
+<p><img class="center" src="http://blog.softdrunk.me/images/hhkb.jpg" width="1024" height="658" title="'HHKB Pro2 Type-S non-printed'" /></p>
+
+<p>But I soon realized that the Fn key is quite useful yet positioned at an awkward
+location. Originally I thought I would be able to get rid of arrow keys by using
+all kinds of vim style key mappings in chrome, terminal, and other applications.
+It turns out though, as I would like to use command suggestions in iterm with
+fish shell, arrow keys can still come handy from time to time. So I spent a
+decent amount of time looking around online, hoping to find a way of remapping
+Fn to alt key since the DIP-switch does not support that.</p>
+
+<p>Eventually I found out that I could achieve this simply by turning on SW2, SW4
+and SW5, and then remap option(alt) key to command in the keyboard setup on mac.
+Now the keyboard works the way I want it to and I am really enjoying it!</p>
+
+<p>For those who are curious, the wrist rest I am using is a 100% wood one made by
+FILCO. You can find it on
+<a href="http://www.amazon.com/Filco-Wood-Minila-Keyboards-FWPR/dp/B00CHK39WW/ref=sr_1_1?ie=UTF8&amp;qid=1413531623&amp;sr=8-1&amp;keywords=filco+palm+rest">amazon</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fish Shell + HomeBrew + RVM + Iterm2 on Mac = Awesomeness]]></title>
