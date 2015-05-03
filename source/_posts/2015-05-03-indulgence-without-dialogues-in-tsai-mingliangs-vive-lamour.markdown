@@ -7,7 +7,9 @@ categories: [moive, vive l'amour, Tsai Ming-Liang]
 keywords: vive l'amour, indulgence, Tsai Ming-Liang, Taiwan new cinema
 description: An original response to Tsai Ming-Liang's film Vive L'Amour
 ---
-Tsai Mingliang’s award-winning piece Vive L’Amour is deemed as a slow film by
+{% img center /images/vivelamour.jpg 1024 658 'Vive L'Amour' %}
+
+Tsai Mingliang’s award-winning piece *Vive L’Amour* is deemed as a slow film by
 many. Without much effort, one can find a series of scenes where not much is
 happening and the conversations between characters are kept at its minimum.
 Though this sort of hyperbolic realism without dialogues that brings the
